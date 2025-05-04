@@ -90,5 +90,13 @@ export default defineConfig({
       // formats: ['es', 'umd', 'cjs'],
       fileName: "t-ui-plus"
     }
+  },
+  css: {
+    preprocessorOptions: {
+      less: {
+        javascriptEnabled: true,
+        math: "always"
+      }
+    }
   }
 });

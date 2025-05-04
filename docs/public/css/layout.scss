@@ -1,0 +1,21 @@
+.demo-layout {
+  .z-layout > div {
+    background: #7dbcea;
+    color: #fff;
+    text-align: center;
+  }
+  .z-layout-content {
+    background: rgba(16, 142, 233, 1) !important;
+    min-height: 120px;
+    line-height: 120px;
+  }
+  .z-layout-sider {
+    background: #3ba0e9 !important;
+    line-height: 1;
+    line-height: 120px;
+  }
+
+  .z-layout--move {
+    background: #3ba0e9 !important;
+  }
+}

@@ -1,0 +1,159 @@
+@import "./variables.less";
+@import "./element-ui.less";
+@import "./base.less";
+@import "./form.less";
+@import "./jean.less";
+
+.z-rblock {
+  .rbox;
+}
+.z-tab-page {
+  .rbox;
+  background-color: @background-color;
+  overflow: hidden auto;
+}
+
+.z-title {
+  height: 40px;
+  width: 100%;
+  line-height: 39px;
+  color: #606266;
+  font-size: 14px;
+  padding-left: 8px;
+}
+
+.z-form-table-body {
+  .rbox;
+  padding: 8px 0 8px 0;
+  overflow: hidden auto;
+}
+
+.z-iframe {
+  height: 100%;
+  width: 100%;
+}
+
+.z-form-panel {
+  box-sizing: border-box;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  max-width: 794px;
+  overflow: hidden auto;
+  background-color: #fff;
+  border-radius: 4px;
+  margin: auto;
+  padding: 24px;
+}
+
+.z-page-panel {
+  box-sizing: border-box;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  max-width: 794px;
+  overflow: hidden auto;
+  background-color: #fff;
+  border-radius: 4px;
+  margin: auto;
+  padding: 24px;
+}
+
+.s-w-72 .el-input {
+  width: 72px;
+}
+.s-w-80 .el-input {
+  width: 80px;
+}
+.s-w-88 .el-input {
+  width: 88px;
+}
+.s-w-96 .el-input {
+  width: 96px;
+}
+
+.tree-setting-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  text-align: center;
+  width: 32px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.z-bottom {
+  position: absolute;
+  height: 33px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  padding: 0px 4px;
+  box-sizing: border-box;
+}
+
+.z-info-message .ok {
+  color: #1bb99a;
+}
+.z-info-message .error {
+  color: #ff3015;
+}
+
+.z-set-item {
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  height: 34px;
+  padding: 2px 0;
+  padding-left: 22px;
+  padding-right: 30px;
+  border: 1px dashed transparent;
+
+  &__Num {
+    padding-left: 52px;
+  }
+  .el-tag {
+    box-sizing: border-box;
+    position: absolute;
+    top: 2px;
+    left: 22px;
+  }
+
+  .z-drag-item {
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    top: 8px;
+    left: 2px;
+    font-size: 16px;
+    cursor: move;
+  }
+
+  .z-delete-item {
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    top: 5px;
+    right: 2px;
+  }
+}
+
+.z-color-block {
+  height: 28px;
+  width: 28px;
+  margin: auto;
+}
+
+.flex {
+  display: flex;
+}
+.flex-column {
+  flex-direction: column;
+}
+.flex-full {
+  flex-grow: 100;
+}
+.mt-8 {
+  margin-top: 8px;
+}

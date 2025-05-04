@@ -1,0 +1,81 @@
+.z-layout {
+  &,
+  &--container,
+  &--wrapper {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    transition: all 0.3s;
+  }
+  &--top,
+  &--bottom,
+  &--left,
+  &--right {
+    position: absolute;
+    overflow: hidden;
+    transition: all 0.3s;
+  }
+  &--top,
+  &--bottom {
+    left: 0;
+    height: 0;
+    width: 100%;
+    max-height: 100%;
+  }
+  &--left,
+  &--right {
+    top: 0;
+    height: 100%;
+    width: 0;
+    max-width: 100%;
+  }
+  &--move {
+    position: absolute;
+  }
+
+  &--top {
+    top: 0;
+    padding-bottom: 4px;
+    .z-layout--move {
+      bottom: 0;
+      left: 0;
+      height: 4px;
+      width: 100%;
+      cursor: row-resize;
+    }
+  }
+  &--bottom {
+    bottom: 0;
+    padding-top: 4px;
+    .z-layout--move {
+      top: 0;
+      left: 0;
+      height: 4px;
+      width: 100%;
+      cursor: row-resize;
+    }
+  }
+  &--left {
+    left: 0;
+    padding-right: 4px;
+    .z-layout--move {
+      top: 0;
+      right: 0;
+      width: 4px;
+      height: 100%;
+      cursor: col-resize;
+    }
+  }
+  &--right {
+    right: 0;
+    padding-left: 4px;
+    .z-layout--move {
+      top: 0;
+      left: 0;
+      width: 4px;
+      height: 100%;
+      cursor: col-resize;
+    }
+  }
+}

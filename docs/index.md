@@ -18,7 +18,7 @@ hero:
       link: /components/
     - theme: brand
       text: 组件预览
-      link: /components/TInput/base.md
+      link: /components/ZButton/base.md
 features:
   # - icon: 🔨
   #   title: 实际项目

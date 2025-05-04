@@ -1,4 +1,5 @@
-/* :root {
+@import "./layout.scss";
+@import "../../../packages/styles/index.less"; /* :root {
   --vp-c-brand: #646cff;
   --vp-c-brand-light: #747bff;
   --vp-c-brand-lighter: #9499ff;
@@ -8,21 +9,21 @@
   --demoblock-border: #e7e7e7;
   --vp-code-block-bg: #f9fafb;
 } */
-
 /* .demo-block .meta {
   background-color: var(--vp-code-block-bg);
 } */
 /* html.dark {
   --vp-code-block-bg: var(--vp-code-block-bg);
 } */
-
 /* .vp-doc {    color: var(--vp-c-brand);
   background-color: var(--el-bg-color);
 } */
-.aside .outline-link.active {
+/* .aside .outline-link.active {
   color: var(--vp-c-brand);
-}
-.aside .outline-link:hover {
+} */
+
+/* ======================= */
+/* .aside .outline-link:hover {
   color: var(--vp-c-brand);
 }
 .VPSidebarItem .item .link .text el-tag {
@@ -85,8 +86,11 @@
 .vp-doc ul,
 .vp-doc ol {
   padding-left: 0;
-}
+} */
 
 /* pre{
   background: transparent;
 } */
+.vp-doc table {
+  margin: 0 !important;
+}

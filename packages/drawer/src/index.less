@@ -1,0 +1,78 @@
+@import "../../styles/variables.less";
+
+.el-drawer {
+  &:focus {
+    outline: none;
+  }
+  .el-drawer__body {
+    padding: 0 !important;
+  }
+}
+
+.z-drawer {
+  .el-drawer__body {
+    position: relative;
+    height: 100%;
+  }
+
+  &--wrapper {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding-top: @header-height;
+    display: flex;
+  }
+
+  &--header {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    height: @header-height;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-bottom: @border-width-base @border-style-base @border-color-base;
+  }
+
+  &--title {
+    position: relative;
+    width: 100%;
+    padding-left: @padding-md;
+    color: @heading-color;
+    font-size: @font-size-base;
+    flex-grow: 2;
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  &--btns {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-right: @padding-xs;
+  }
+
+  &--body {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    // margin-top: 48px;
+  }
+
+  &-bottom-btns {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: @bottom-height;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: @padding-xs;
+    border-top: @border-width-base @border-style-base @border-color-base;
+  }
+}

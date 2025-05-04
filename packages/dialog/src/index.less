@@ -1,0 +1,135 @@
+@import "../../styles/variables.less";
+.jean-dialog-top {
+  z-index: 9999990 !important;
+}
+.z-dialog,
+.z-dialog-dark {
+  pointer-events: all;
+  // margin: 0 !important;
+  .el-dialog__header {
+    position: relative;
+    height: @header-height;
+    width: 100%;
+    border-radius: @border-radius-sm @border-radius-sm 0 0;
+    border-bottom: @border-width-base @border-style-base @border-color-base;
+    padding: 0;
+  }
+
+  .el-dialog__headerbtn {
+    position: relative;
+    top: auto;
+    right: auto;
+    margin-right: 8px;
+  }
+
+  &-header {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    &-icons {
+      position: relative;
+      display: flex;
+      align-items: center;
+      height: 100%;
+    }
+  }
+
+  .el-dialog__title {
+    position: relative;
+    height: 100%;
+    padding-left: @padding-md;
+    color: @heading-color;
+    font-size: 14px;
+    flex-grow: 2;
+    overflow: hidden;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    &__text {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  }
+
+  .el-dialog__body {
+    padding: 0;
+    min-height: 48px;
+    width: 100%;
+  }
+
+  &-window {
+    position: relative;
+    width: 100%;
+  }
+  &-window-hasBtns {
+    padding-bottom: @bottom-height;
+  }
+  &-btns {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: @bottom-height;
+    width: 100%;
+    padding-right: @padding-xs;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  @stepsHeight: 40px;
+  .el-steps {
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: @stepsHeight;
+    overflow: hidden;
+  }
+
+  &-window-hasSteps {
+    padding-top: @stepsHeight;
+  }
+}
+
+.z-dialog-top,
+.z-dialog-top-left,
+.z-dialog-top-right {
+  top: @padding-md;
+}
+.z-dialog-bottom,
+.z-dialog-bottom-left,
+.z-dialog-bottom-right {
+  bottom: @padding-md;
+}
+.z-dialog-left,
+.z-dialog-top-left,
+.z-dialog-bottom-left {
+  left: @padding-md;
+}
+.z-dialog-right,
+.z-dialog-top-right,
+.z-dialog-bottom-right {
+  right: @padding-md;
+}
+.z-dialog-top,
+.z-dialog-bottom .z-dialog-left,
+.z-dialog-top-left,
+.z-dialog-bottom-left,
+.z-dialog-right,
+.z-dialog-top-right,
+.z-dialog-bottom-right {
+  position: absolute;
+}
+
+.z-dialog-min {
+  width: 208px !important;
+  .el-dialog__body {
+    height: 0;
+    min-height: 0;
+  }
+}

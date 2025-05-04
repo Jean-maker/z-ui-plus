@@ -1,0 +1,40 @@
+@import "../../styles//variables.less";
+
+.z-table {
+  position: relative;
+  width: 100%;
+
+  // 分页
+  &--pagination {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 33px;
+    width: 100%;
+    border-top: 1px solid @border-color-split;
+    background: #fff;
+    .el-pagination {
+      height: 100% !important;
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      padding: 0 10px;
+    }
+
+    .el-input--mini .el-input__inner {
+      height: 22px;
+      line-height: 22px;
+    }
+
+    .el-input--mini .el-input__icon {
+      line-height: 22px;
+    }
+
+    padding-top: 3px;
+    text-align: right;
+  }
+
+  &--haspagination {
+    padding-bottom: 33px;
+  }
+}

@@ -1,10 +1,36 @@
 import type { Component, App } from "vue";
+
 import ZButton from "./button";
+import ZLayout from "./layout";
+import ZPanel from "./panel";
+import ZQuery from "./query";
+import ZDrawer from "./drawer";
+import ZDialog from "./dialog";
+import ZFullscreenDialog from "./fullscreenDialog";
+import ZRadio from "./radio";
+import ZCheckbox from "./checkbox";
+import ZSelect from "./select";
+import ZLayerSelect from "./layerSelect";
+import ZTable from "./table";
+import ZPagination from "./pagination";
+
 // 存储组件列表
 const components: {
   [propName: string]: Component;
 } = {
-  ZButton
+  ZButton,
+  ZLayout,
+  ZPanel,
+  ZQuery,
+  ZDrawer,
+  ZDialog,
+  ZFullscreenDialog,
+  ZRadio,
+  ZCheckbox,
+  ZSelect,
+  ZLayerSelect,
+  ZTable,
+  ZPagination
 };
 
 // 插件声明：声明所有插件
@@ -34,7 +60,21 @@ if (typeof window !== "undefined" && window.Vue) {
   install(window.Vue);
 }
 // 按需引入
-export { ZButton };
+export {
+  ZButton,
+  ZLayout,
+  ZPanel,
+  ZQuery,
+  ZDrawer,
+  ZDialog,
+  ZFullscreenDialog,
+  ZRadio,
+  ZCheckbox,
+  ZSelect,
+  ZLayerSelect,
+  ZTable,
+  ZPagination
+};
 
 /**
  * @description 公共方法

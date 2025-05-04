@@ -1,0 +1,176 @@
+@import './variables.less';
+
+/*颜色*/
+.@{css-prefix} {
+  &-primary {
+    color: @primary-color;
+  }
+
+  &-success {
+    color: @success-color;
+  }
+
+  &-wanring {
+    color: @warning-color;
+  }
+
+  &-error {
+    color: @error-color;
+  }
+
+  &-info {
+    color: @info-color;
+  }
+
+
+  &-tooltip-top {
+    z-index: 9999999 !important;
+  }
+}
+
+
+/*列表*/
+.@{css-prefix}-list {
+  &-item {
+    border-bottom: @border-width-base @border-style-base @border-color-split;
+
+    &-wraper {
+      display: flex;
+      align-items: center;
+      min-height: 47px;
+      padding: 0 8px;
+
+
+      .el-button--text {
+        color: #181d1f;
+        padding: 0;
+
+        &:hover {
+          color: @primary-color;
+        }
+      }
+    }
+
+    &-content {
+      position: relative;
+      flex-grow: 4;
+      overflow: hidden;
+    }
+
+    &-title {
+      color: @heading-color;
+      font-size: 14px;
+      line-height: 24px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+
+    &-des {
+      color: @text-color-secondary;
+      font-size: 12px;
+      line-height: 12px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+
+    &-icon {
+      position: relative;
+      font-size: 24px;
+      display: flex;
+      align-items: center;
+    }
+
+    &-icon+&-content {
+      padding-left: 8px;
+    }
+
+    &-content+&-des {
+      margin-left: 8px;
+    }
+
+    &-des+&-icon {
+      margin-left: 8px;
+    }
+
+    &:hover {
+      background-color: @background-color-light;
+    }
+
+    cursor: pointer;
+  }
+}
+
+/*信息描述*/
+.@{css-prefix} {
+  &-des-item {
+    display: flex;
+    align-items: center;
+    font-size: @font-size-base;
+    margin-bottom: 16px;
+
+    &-label {
+      width: 84px;
+      color: @text-color-secondary;
+    }
+
+    &-content {
+      flex-grow: 4;
+      color: @text-color;
+    }
+  }
+}
+
+/*配置表单*/
+.@{css-prefix}-form-config {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden auto;
+  padding: @padding-md;
+  padding-bottom: @padding-xs;
+}
+
+/*按钮*/
+.@{css-prefix}-close-icon-btn {
+  font-size: @font-size-lg;
+  color: @info-color;
+
+  &:hover {
+    color: @primary-color;
+  }
+}
+
+.@{css-prefix}-text-btn {
+  font-size: @font-size-base;
+  padding: 0;
+  height: 28px;
+  width: 32px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    background-color: @background-color-light;
+  }
+}
+
+/*子表输入*/
+.@{css-prefix}-row-form-input {
+  padding: 8px;
+  background: @background-color;
+  position: relative;
+  border-radius: 4px;
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  &-delete {
+    position: absolute;
+    top: -9px;
+    right: -9px;
+    padding: 2px !important;
+  }
+}

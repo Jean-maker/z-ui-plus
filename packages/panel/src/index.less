@@ -1,0 +1,73 @@
+@import "../../styles/variables.less";
+.z-panel {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  padding: @padding-xs;
+
+  &--warpper {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: @white;
+    border-radius: @border-radius-sm;
+  }
+
+  &--body {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden auto;
+  }
+
+  &--title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: @header-height;
+    display: flex;
+    align-items: center;
+
+    color: @heading-color;
+    font-size: @font-size-lg;
+    padding-left: @padding-xs;
+    border-bottom: @border-width-base @border-style-base @border-color-base;
+  }
+
+  &--tool {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: @header-height;
+    width: 100%;
+    border-bottom: @border-width-base @border-style-base @border-color-base;
+
+    display: flex;
+    justify-content: space-between;
+  }
+  &--tool-right {
+    position: relative;
+    padding-right: @padding-xs;
+    height: 100%;
+    display: flex;
+
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  &--tool-left {
+    position: relative;
+    padding-left: @padding-xs;
+    height: 100%;
+    flex-grow: 2;
+    display: flex;
+  }
+
+  &--item {
+    display: flex;
+    height: 100%;
+    margin-right: 4px;
+    align-items: center;
+  }
+}
